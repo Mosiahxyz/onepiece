@@ -32,7 +32,7 @@
         <section class="container py-3">
             <a href="#" class="navbar-brand">
                 <img class="img-fluid" src="images/home.png" alt="Logo">
-                <span>ONE PIECE</span>
+                <span  id="menu-color" >ONE PIECE</span>
             </a>
             <!-- Criação do botão para representar o menu hamburguer -->
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
@@ -43,11 +43,11 @@
             <!-- Definição dos links do menu -->
             <section class="collapse navbar-collapse" id="navbar-items">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Capitulos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Comunidade</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link"  id="menu-color" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link"  id="menu-color" href="#email">Inscreva-se</a></li>
+                    <li class="nav-item"><a class="nav-link"  id="menu-color" href="#lancamentos">Lançamentos</a></li>
+                    <li class="nav-item"><a class="nav-link"  id="menu-color" href="#">Comunidade</a></li>
+                    <li class="nav-item"><a class="nav-link"  id="menu-color" href="#">Contato</a></li>
                 </ul>
             </section>
         </section>
@@ -119,45 +119,93 @@
 
                 <!-- Primeiro card -->
                 <section class="col-12 col-md-3">
-                    <section class="card text-center">
+                    <section class="card text-center" id="card-bg">
                         <i class="bi bi-collection-play"></i>                        <section class="card-body">
-                            <h5 class="card-title primary-color">Assista One Piece</h5>
-                            <p class="card-text card-pequenos secondary-color">Assita One Piece online e veja as aventuras de Luffy e seus amigos</p>
-                            <a href="#" class="btn btn-dark">Assista já</a>
+                            <h5 class="card-title colorwhite">Assista One Piece</h5>
+                            <p class="card-text card-pequenos colorwhite">Assita One Piece online e veja as aventuras de Luffy e seus amigos</p>
+                            
+                            <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalvideo">
+                                Assista Agora
+                              </button>
+
                         </section>
                     </section>
                 </section>
 
+                
+                <!-- Modal ASSISTA-->
+                <div class="modal fade" id="modalvideo" tabindex="-1" aria-labelledby="modalvideoLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalvideoLabel">Zoro e Luffy x Piratas Foxy</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe width="560" height="315" id="videoep" src="https://www.youtube.com/embed/Ww4hKprWDQA?si=uAjVjnCuXg62OmxD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Episódio Anterior</button>
+                        <button type="button" class="btn btn-primary">Próximo Episódio</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
                 <!-- Segundo card -->
                 <section class="col-12 col-md-3">
-                    <section class="card text-center">
+                    <section class="card text-center" id="card-bg">
                         <i class="bi bi-journal-bookmark-fill"></i>                        <section class="card-body">
-                            <h5 class="card-title primary-color">Leia One Piece</h5>
-                            <p class="card-text card-pequenos secondary-color">Conheça o mangá com os capítulos mais atualizados escritos por Echiro Oda</p>
-                            <a href="#" class="btn btn-dark">Leia Aqui</a>
+                            <h5 class="card-title colorwhite">Leia One Piece</h5>
+                            <p class="card-text card-pequenos colorwhite">Conheça o mangá com os capítulos mais atualizados escritos por Echiro Oda</p>
+                            <a href="https://onepieceex.net/categoria/manga/" class="btn btn-light">Leia Aqui</a>
                         </section>
                     </section>
                 </section>
 
                 <!-- Terceiro card -->
                 <section class="col-12 col-md-3">
-                    <section class="card text-center">
+                    <section class="card text-center" id="card-bg">
                         <i class="bi bi-paint-bucket"></i>                        <section class="card-body">
-                            <h5 class="card-title primary-color">Fanarts</h5>
-                            <p class="card-text card-pequenos secondary-color">Aprecie as fanarts dos fãs de One Piece nas redes sociais não oficiais de One Piece</p>
-                            <a href="#" class="btn btn-dark">Veja as artes</a>
+                            <h5 class="card-title colorwhite">Fanarts</h5>
+                            <p class="card-text card-pequenos colorwhite">Aprecie as fanarts dos fãs de One Piece nas redes sociais não oficiais de One Piece</p>
+                            <button type="button" class="btn btn-primary btn-light" data-bs-toggle="modal" data-bs-target="#modalarte">
+                                Veja as artes
+                              </button>
                         </section>
                     </section>
                 </section>
 
+                <div class="modal fade" id="modalarte" tabindex="-1" aria-labelledby="modalarteLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="modalarteLabel">Pintura á aquarela</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="https://assets.pinterest.com/ext/embed.html?id=61994932363363566" height="445" width="345" frameborder="0" scrolling="no" ></iframe>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ver mais</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+  
+                
+
                 <!-- Quarto card -->
                 <section class="col-12 col-md-3">
-                    <section class="card text-center">
+                    <section class="card text-center" id="card-bg">
                         <i class="bi bi-cart"></i>
                         <section class="card-body">
-                            <h5 class="card-title primary-color">Camisas</h5>
-                            <p class="card-text card-pequenos secondary-color">Compre produtos oficiais do Chpéu de Palha e seus amigos</p>
-                            <a href="#" class="btn btn-dark">Compre já</a>
+                            <h5 class="card-title colorwhite">Camisas</h5>
+                            <p class="card-text card-pequenos colorwhite">Compre produtos oficiais do Chpéu de Palha e seus amigos</p>
+                            <a href="#" class="btn btn-light">Compre já</a>
                         </section>
                     </section>
                 </section>
@@ -177,7 +225,7 @@
 
         <!-- Início das imagens-->
         <section class="col-12" id="featured-images">
-            <section class="row g-4">
+            <section class="row g-4" id="lancamento">
 
                 <section class="col-12 col-md-4">
                     <img src="./images/episodios/ep1.jpg" alt="" class="img-fluid">
@@ -219,14 +267,15 @@
                     </section>
                 </section>
 
-                <section class="col-12 col-md-4">
+                <section class="col-12 col-md-4" >
                     <img src="./images/episodios/ep4.png" alt="" class="img-fluid">
-                    <section class="banner-content">
+                    <section class="banner-content" id="email">
                         <p>Mangá</p>
                         <h3>Capítulo 724</h3>
                     </section>
                 </section>
 
+   
 
             </section>
         </section>
@@ -237,7 +286,7 @@
     <!-- Informações -->
     <section class="container" id="info-conteiner">
         <section class="col-12">
-            <h2 class="title primary-color">Inscreva-se na Newsletter</h2>
+            <h2 class="title primary-color" >Inscreva-se na Newsletter</h2>
             <p class="subtitle-secondary-color">Receba as últimas notícias mundo de One Piece</p>
 
             <!--FORMULARIO-->
@@ -255,7 +304,7 @@
         <!-- INICIO MODAL -->
         <section class="col-12 col-md-4">
 
-            <button type="button" class="btn btn-dark criarconta" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-success criarconta" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Inscrever-se
             </button>
 
