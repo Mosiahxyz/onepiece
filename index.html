@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>One Piece</title>
+
+    <!-- Google Fonts - Robot-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Icone do Site-->
+    <link rel="shortcut icon" type="imagex/png" href="./images/home.png">
+
+</head>
+
+<header>
+    <!-- Definição da barra de navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img class="img-fluid" src="images/home.png" alt="Logo">
+                <span>ONE PIECE</span>
+            </a>
+            <!-- Criação do botão para representar o menu hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Definição dos links do menu -->
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Capitulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Comunidade</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+</header>
+
+<body>
+    <!-- Definição do Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="5000" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+
+                <!-- Criação dos botões que representam as imagens-->
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </section>
+
+            <!-- Definição do conteúdo do carrousel -->
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="images/hallo1.jpg" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <a href="#" class="btn btn-light">OQUE ESPERAR DO FINAL DE ONE PIECE?</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/hallo2.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <a href="#" class="btn btn-light">TEORIA: UM MUGIWARA IRÁ TRAIR O BANDO </a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/hallo4.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <a href="#" class="btn btn-light">QUANTAS BERRIES CUSTA UM REPOLHO?</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/hallo3.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <a href="#" class="btn btn-light">AS CAPAS MAIS MISTERIOSAS DE ONE PIECE</a>
+                    </section>
+                </section>
+            </section>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-arrow-clockwise"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Criação dos cards / banners-->
+        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+            <section class="row">
+
+                <!-- Primeiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-collection-play"></i>                        <section class="card-body">
+                            <h5 class="card-title primary-color">Assista One Piece</h5>
+                            <p class="card-text card-pequenos secondary-color">Assita One Piece online e veja as aventuras de Luffy e seus amigos</p>
+                            <a href="#" class="btn btn-dark">Assista já</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Segundo card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-journal-bookmark-fill"></i>                        <section class="card-body">
+                            <h5 class="card-title primary-color">Leia One Piece</h5>
+                            <p class="card-text card-pequenos secondary-color">Conheça o mangá com os capítulos mais atualizados escritos por Echiro Oda</p>
+                            <a href="#" class="btn btn-dark">Leia Aqui</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Terceiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-paint-bucket"></i>                        <section class="card-body">
+                            <h5 class="card-title primary-color">Fanarts</h5>
+                            <p class="card-text card-pequenos secondary-color">Aprecie as fanarts dos fãs de One Piece nas redes sociais não oficiais de One Piece</p>
+                            <a href="#" class="btn btn-dark">Veja as artes</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Quarto card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Camisas</h5>
+                            <p class="card-text card-pequenos secondary-color">Compre produtos oficiais do Chpéu de Palha e seus amigos</p>
+                            <a href="#" class="btn btn-dark">Compre já</a>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Final dos cards -->
+            </section>
+        </section>
+    </section>
+
+    <!-- Destaques -->
+    <!-- Container dos desatques -->
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Últimas notícias</h2>
+            <p class="subtitle secondary-color">Conheça nossas noticias recente</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/episodios/ep1.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Mangá</p>
+                        <h3>Capítulo 1050</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/episodios/ep.jfif" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Anime</p>
+                        <h3>Episódio 230</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/episodios/ep3.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Mangá</p>
+                        <h3>Capítulo 890</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/episodios/ep5.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Anime</p>
+                        <h3>Episódio 653</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/episodios/ep2.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Mangá</p>
+                        <h3>Capítulo 1095</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/episodios/ep4.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Mangá</p>
+                        <h3>Capítulo 724</h3>
+                    </section>
+                </section>
+
+
+            </section>
+        </section>
+    </section>
+    <!-- Fim do container destaques -->
+
+
+    <!-- Informações -->
+    <section class="container" id="info-conteiner">
+        <section class="col-12">
+            <h2 class="title primary-color">Inscreva-se na Newsletter</h2>
+            <p class="subtitle-secondary-color">Receba as últimas notícias mundo de One Piece</p>
+
+            <!--FORMULARIO-->
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Senha</label>
+              </div>
+
+        </section>
+
+        <!-- INICIO MODAL -->
+        <section class="col-12 col-md-4">
+
+            <button type="button" class="btn btn-dark criarconta" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Inscrever-se
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Email enviado! Verifique sua caixa de entrada.</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!--BOTAO PARA FECHER MODAL-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- FIM MODAL -->
+            </section>
+
+
+      
+    <!-- Fim do container Informações -->
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <section class="container">
+            <section class="row">
+                <!-- FOOTER TOP -->
+                <section class="col-12" id="footer-top">
+                    <section class="row justify-content-between">
+                        <section class="col-4">
+                            <h2>
+                                ONE PIECE
+                            </h2>
+
+                            <img src="./images/coverfooter.jpg" class="img-fluid img-thumbnail">
+
+                        </section>
+
+                        <section class="col-12 col-md-4 googlemaps">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.9161902845267!2d-48.4934153409182!3d-20.91569127071054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bbe4338b32b5ed%3A0x6c8ea87bd5074dd9!2sR.%20Maria%20%C3%82ngela%20Rasteiro%2C%20181%20-%20Res.%20Rassim%20Dibe%2C%20Bebedouro%20-%20SP%2C%2014708-238!5e0!3m2!1spt-BR!2sbr!4v1698256285308!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </section>
+
+                        <section class="col-4 googlemaps" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Bootstrap JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous" defer></script>
+</body>
+
+</html>
